@@ -111,35 +111,35 @@ const certificates = [
     title: "4-Day CSS Bootcamp Certificate",
     issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
     Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: "/public/CSS Bootcamp.jpeg",
+    image: "/CSS Bootcamp.jpeg",
     link: "https://coursera.org/share/sample-cert",
   },
   {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
-    image: "/public/Front End Internship.jpeg",
+    image: "/Front End Internship.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Google Developer Students Club (GDSC) Core Team Member Certificate",
     issuer: "GDSC - MUET, Jamshoro",
     Dated: "2023 - 2024",
-    image: "/public/GDSC certificate.jpeg",
+    image: "/GDSC certificate.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
-    image: "/public/Forage + Tata Analytics Job Simulation.jpeg",
+    image: "/Forage + Tata Analytics Job Simulation.jpeg",
     link: "https://forage.com/share/sample-cert",
   },
   {
     title: "Prepare Data For Exploration Certificate",
     issuer: "Coursera . Google",
     Dated: "23 June, 2025",
-    image: "/public/Google Prepare Data certificate.jpeg",
+    image: "/Google Prepare Data certificate.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
 ];
@@ -164,7 +164,7 @@ function App() {
           <a href="#certificates" className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Certificates</a>
         </section>
         
-        <a href="/public/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+        <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
           className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
           <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
         </a>
@@ -200,7 +200,7 @@ function App() {
 
             </section>
 
-            <a href="/public/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+            <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
               className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
               <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
             </a>
@@ -223,12 +223,12 @@ function App() {
         </p>
 
         <div className='flex flex-row space-x-8 pt-8'>
-          <a href="/public/Hadisa_Syed_CV_(Data Analyst).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
+          <a href="/Hadisa_Syed_CV_(Data Analyst).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
           </a>
 
-          <a href="/public/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+          <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
           </a>
@@ -241,7 +241,7 @@ function App() {
       <div id='about' className='mt-50 px-[3rem] text-justify sm:px-16'>
         <section className='flex flex-col lg:flex-row mt-8 space-x-8'>
           <p className='hidden md:flex rounded-xl border-2 border-white/30 overflow-hidden my-8 lg:my-0 w-1/4 lg:w-auto lg:sticky lg:top-50 flex-1/3 h-[50rem] lg:h-[30rem]'>
-            <img src="/public/purple.jpeg" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
+            <img src="/purple.jpeg" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
           </p>
 
           <section className='flex-2/3'>
