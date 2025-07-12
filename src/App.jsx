@@ -63,7 +63,7 @@ const projects = [
     description: "An interactive memory game designed to enhance focus and recall through engaging card-matching challenges.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "/MemoryGame.png",
+    image: "./MemoryGame.png",
     demoLink: "https://hadisafatima.github.io/Simple-Memory-Game-web/",
     githubLink: "https://github.com/hadisafatima/Simple-Memory-Game-web",
   },
@@ -72,7 +72,7 @@ const projects = [
     description: "A site sharing the meanings of Surahs and timeless Hadiths to deepen understanding of Quran and Sunnah.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "/QuranAndSunnah.png",
+    image: "./QuranAndSunnah.png",
     demoLink: "https://hadisafatima.github.io/Wisdoms-of-Holy-Quran-and-Sunnahs/",
     githubLink: "https://github.com/hadisafatima/Wisdoms-of-Holy-Quran-and-Sunnahs",
   },
@@ -81,7 +81,7 @@ const projects = [
     description: "A visually accurate static clone of Twitter, designed to highlight layout and UI skills.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "/Twitter.jpg",
+    image: "./Twitter.jpg",
     demoLink: "https://hadisafatima.github.io/TwitterX_Clone/",
     githubLink: "https://github.com/hadisafatima/TwitterX_Clone",
   },
@@ -90,7 +90,7 @@ const projects = [
     description: "This Netflix movies analysis project reflects my hands-on experience with data wrangling, exploratory analysis, and insightful visualization to extract meaningful entertainment industry insights.",
     tech: "Python, Seaborn, Matplotlib, Numpy, Pandas",
     category: "Data Analysis",
-    image: "/Netflix.png",
+    image: "./Netflix.png",
     demoLink: "#",
     githubLink: "https://github.com/hadisafatima/Netflix-Movies-Data-Analysis-Project",
   },
@@ -111,35 +111,35 @@ const certificates = [
     title: "4-Day CSS Bootcamp Certificate",
     issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
     Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: "/CSS_Bootcamp.jpeg",
+    image: "./CSS_Bootcamp.jpeg",
     link: "https://coursera.org/share/sample-cert",
   },
   {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
-    image: "/Front_End_Internship.jpeg",
+    image: "./Front_End_Internship.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Google Developer Students Club (GDSC) Core Team Member Certificate",
     issuer: "GDSC - MUET, Jamshoro",
     Dated: "2023 - 2024",
-    image: "/GDSC_certificate.jpeg",
+    image: "./GDSC_certificate.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
-    image: "/Forage_&_Tata_Analytics_Job_Simulation.jpeg",
+    image: "./Forage_&_Tata_Analytics_Job_Simulation.jpeg",
     link: "https://forage.com/share/sample-cert",
   },
   {
     title: "Prepare Data For Exploration Certificate",
     issuer: "Coursera . Google",
     Dated: "23 June, 2025",
-    image: "/Google_Prepare_Data_certificate.jpeg",
+    image: "./Google_Prepare_Data_certificate.jpeg",
     link: "https://drive.google.com/sample-certificate",
   },
 ];
@@ -164,7 +164,7 @@ function App() {
           <a href="#certificates" className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Certificates</a>
         </section>
         
-        <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+        <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
           className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
           <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
         </a>
@@ -200,7 +200,7 @@ function App() {
 
             </section>
 
-            <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+            <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
               className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
               <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
             </a>
@@ -223,12 +223,12 @@ function App() {
         </p>
 
         <div className='flex flex-row space-x-8 pt-8'>
-          <a href="/Hadisa_Syed_CV_(Data Analyst).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
+          <a href="./Hadisa_Syed_CV_(Data Analyst).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
           </a>
 
-          <a href="/Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+          <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
           </a>
