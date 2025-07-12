@@ -90,7 +90,7 @@ const projects = [
     description: "This Netflix movies analysis project reflects my hands-on experience with data wrangling, exploratory analysis, and insightful visualization to extract meaningful entertainment industry insights.",
     tech: "Python, Seaborn, Matplotlib, Numpy, Pandas",
     category: "Data Analysis",
-    image: "/public/Netflix.png",
+    image: "/Netflix.png",
     demoLink: "#",
     githubLink: "https://github.com/hadisafatima/Netflix-Movies-Data-Analysis-Project",
   },
