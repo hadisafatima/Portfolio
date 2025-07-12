@@ -241,7 +241,7 @@ function App() {
       <div id='about' className='mt-50 px-[3rem] text-justify sm:px-16'>
         <section className='flex flex-col lg:flex-row mt-8 space-x-8'>
           <p className='hidden md:flex rounded-xl border-2 border-white/30 overflow-hidden my-8 lg:my-0 w-1/4 lg:w-auto lg:sticky lg:top-50 flex-1/3 h-[50rem] lg:h-[30rem]'>
-            <img src="https://drive.google.com/file/d/1II4227_ONOJ425EUBk39A5tUmc5IzPmQ/view?usp=sharing" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
+            <img src="https://drive.google.com/uc?export=view&id=1II4227_ONOJ425EUBk39A5tUmc5IzPmQ" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
           </p>
 
           <section className='flex-2/3'>
