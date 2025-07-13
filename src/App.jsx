@@ -118,7 +118,7 @@ const certificates = [
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
-    image: `${import.meta.env.BASE_URL}Front_End_Internship.jpg`,
+    image: "./Front_End_Internship.jpg",
     link: "https://drive.google.com/sample-certificate",
   },
   {
