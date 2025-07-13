@@ -73,6 +73,7 @@
   background-color: #53525295;
   color: white !important;
   padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 #skills #skillsheading{
