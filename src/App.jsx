@@ -111,7 +111,7 @@ const certificates = [
     title: "4-Day CSS Bootcamp Certificate",
     issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
     Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: `${import.meta.env.BASE_URL}CSS_Bootcamp.jpeg`,
+    image: "./CSS_Bootcamp.jpeg",
     link: "https://coursera.org/share/sample-cert",
   },
   {
@@ -132,7 +132,7 @@ const certificates = [
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
-    image: `${import.meta.env.BASE_URL}Forag3_&_Tata_Analytics_Job_Simulation.jpeg`,
+    image: "./Forage_&_Tata_Analytics_Job_Simulation.jpeg",
     link: "https://forage.com/share/sample-cert",
   },
   {
