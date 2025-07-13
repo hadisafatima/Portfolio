@@ -69,6 +69,12 @@
   font-weight: bolder;
 }
 
+.resumeCvBtn:hover{
+  background-color: #53525295;
+  color: white !important;
+  padding: 1rem 2rem;
+}
+
 #skills #skillsheading{
   -webkit-text-fill-color: transparent;
   background-clip: text;
