@@ -63,7 +63,7 @@ const projects = [
     description: "An interactive memory game designed to enhance focus and recall through engaging card-matching challenges.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "./MemoryGame.png",
+    image: `${import.meta.env.BASE_URL}MemoryGame.png`,
     demoLink: "https://hadisafatima.github.io/Simple-Memory-Game-web/",
     githubLink: "https://github.com/hadisafatima/Simple-Memory-Game-web",
   },
@@ -72,7 +72,7 @@ const projects = [
     description: "A site sharing the meanings of Surahs and timeless Hadiths to deepen understanding of Quran and Sunnah.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "./QuranAndSunnah.png",
+    image: `${import.meta.env.BASE_URL}QuranAndSunnah.png`,
     demoLink: "https://hadisafatima.github.io/Wisdoms-of-Holy-Quran-and-Sunnahs/",
     githubLink: "https://github.com/hadisafatima/Wisdoms-of-Holy-Quran-and-Sunnahs",
   },
@@ -81,7 +81,7 @@ const projects = [
     description: "A visually accurate static clone of Twitter, designed to highlight layout and UI skills.",
     tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: "./Twitter.jpg",
+    image: `${import.meta.env.BASE_URL}Twitter.jpg`,
     demoLink: "https://hadisafatima.github.io/TwitterX_Clone/",
     githubLink: "https://github.com/hadisafatima/TwitterX_Clone",
   },
@@ -90,7 +90,7 @@ const projects = [
     description: "This Netflix movies analysis project reflects my hands-on experience with data wrangling, exploratory analysis, and insightful visualization to extract meaningful entertainment industry insights.",
     tech: "Python, Seaborn, Matplotlib, Numpy, Pandas",
     category: "Data Analysis",
-    image: "./Netflix.png",
+    image: `${import.meta.env.BASE_URL}Netflix.png`,
     demoLink: "#",
     githubLink: "https://github.com/hadisafatima/Netflix-Movies-Data-Analysis-Project",
   },
@@ -111,35 +111,35 @@ const certificates = [
     title: "4-Day CSS Bootcamp Certificate",
     issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
     Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: "https://github.com/hadisafatima/Portfolio-website-Images/blob/main/CSS_Bootcamp.jpeg",
+    image: `${import.meta.env.BASE_URL}CSS_Bootcamp.jpeg`,
     link: "https://coursera.org/share/sample-cert",
   },
   {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
-    image: `${import.meta.env.BASE_URL}Twitter.jpg`,
+    image: `${import.meta.env.BASE_URL}Front_End_Internship.jpg`,
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Google Developer Students Club (GDSC) Core Team Member Certificate",
     issuer: "GDSC - MUET, Jamshoro",
     Dated: "2023 - 2024",
-    image: "./GDSC_certificate.jpeg",
+    image: `${import.meta.env.BASE_URL}GDSC_certificate.jpeg`,
     link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
-    image: "https://github.com/hadisafatima/Portfolio-website-Images/blob/main/Forage_%26_Tata_Analytics_Job_Simulation.jpeg",
+    image: `${import.meta.env.BASE_URL}Forag3_&_Tata_Analytics_Job_Simulation.jpeg`,
     link: "https://forage.com/share/sample-cert",
   },
   {
     title: "Prepare Data For Exploration Certificate",
     issuer: "Coursera . Google",
     Dated: "23 June, 2025",
-    image: "./Google_Prepare_Data_certificate.jpeg",
+    image: `${import.meta.env.BASE_URL}Google_Prepare_Data_certificate.jpeg`,
     link: "https://drive.google.com/sample-certificate",
   },
 ];
@@ -241,7 +241,7 @@ function App() {
       <div id='about' className='mt-50 px-[3rem] text-justify sm:px-16'>
         <section className='flex flex-col lg:flex-row mt-8 space-x-8'>
           <p className='hidden md:flex rounded-xl border-2 border-white/30 overflow-hidden my-8 lg:my-0 w-1/4 lg:w-auto lg:sticky lg:top-50 flex-1/3 h-[50rem] lg:h-[30rem]'>
-            <img src="https://drive.google.com/uc?export=view&id=1II4227_ONOJ425EUBk39A5tUmc5IzPmQ" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
+            <img src="./purple.jpeg" alt="" className='w-full lg:overflow-hidden h-[12rem] lg:h-[40rem] relative top-18 lg:top-18 right-5 scale-175 lg:scale-130 rounded-2xl object-contain lg:object-cover' />
           </p>
 
           <section className='flex-2/3'>
