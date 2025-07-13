@@ -223,12 +223,12 @@ function App() {
         </p>
 
         <div className='flex flex-row space-x-8 pt-8'>
-          <a href="./Hadisa_Syed_Data_Analyst_(CV).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
+          <a href="./Hadisa_Syed_Data_Analyst_(CV).pdf" download="Hadisa_Syed_Data_Analyst_(CV).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
           </a>
 
-          <a href="./Hadisa_Syed_Data_Analyst_(Resume).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+          <a href="./Hadisa_Syed_Data_Analyst_(Resume).pdf" download="Hadisa_Syed_Data_Analyst_(Resume).pdf"
             className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
             <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
           </a>
