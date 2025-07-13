@@ -111,14 +111,14 @@ const certificates = [
     title: "4-Day CSS Bootcamp Certificate",
     issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
     Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: "./CSS_Bootcamp.jpeg",
+    image: "https://github.com/hadisafatima/Portfolio-website-Images/blob/main/CSS_Bootcamp.jpeg",
     link: "https://coursera.org/share/sample-cert",
   },
   {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
-    image: "./Front_End_Internship.jpeg",
+    image: "{`${import.meta.env.BASE_URL}Twitter.jpg`}",
     link: "https://drive.google.com/sample-certificate",
   },
   {
@@ -132,7 +132,7 @@ const certificates = [
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
-    image: "./Forage_&_Tata_Analytics_Job_Simulation.jpeg",
+    image: "https://github.com/hadisafatima/Portfolio-website-Images/blob/main/Forage_%26_Tata_Analytics_Job_Simulation.jpeg",
     link: "https://forage.com/share/sample-cert",
   },
   {
