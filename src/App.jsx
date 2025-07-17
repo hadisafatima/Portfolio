@@ -119,29 +119,31 @@ const certificates = [
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
     image: `${import.meta.env.BASE_URL}frontend_internship.jpeg`,
-    link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Google Developer Students Club (GDSC) Core Team Member Certificate",
     issuer: "GDSC - MUET, Jamshoro",
     Dated: "2023 - 2024",
     image: `${import.meta.env.BASE_URL}GDSC_certificate.jpeg`,
-    link: "https://drive.google.com/sample-certificate",
   },
   {
     title: "Forage Data Analytics Virtual Job Simulation",
     issuer: "Forage · Tata",
     Dated: "19 April, 2025",
     image: "./Forage_&_Tata_Analytics_Job_Simulation.jpeg",
-    link: "https://forage.com/share/sample-cert",
   },
   {
     title: "Prepare Data For Exploration Certificate",
     issuer: "Coursera . Google",
     Dated: "23 June, 2025",
     image: `${import.meta.env.BASE_URL}Google_Prepare_Data_certificate.jpeg`,
-    link: "https://drive.google.com/sample-certificate",
   },
+  {
+    title: "Analyze Data to Answer Questions",
+    issuer: "Coursera . Google",
+    Dated: "17 June, 2025",
+    image: `${import.meta.env.BASE_URL}Analyze_Data_to_Answer_Questions.png`,
+  }
 ];
 
 
