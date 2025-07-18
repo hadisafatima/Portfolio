@@ -62,14 +62,13 @@ Currently exploring data analytics and aiming to blend it with powerful front-en
 
 ## 📫 Contact:
 
-<p>
-  <a href="https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/" target="_blank">
-    <img src="https://img.shields.io/badge/💼" alt="Visit LinkedIn" />
-  </a>
-</p>
+<a href="mailto:hadisafatima@example.com" target="_blank">
+  <img src="https://img.shields.io/badge/Email-Me-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
+</a>
 
-📧 Email: hadisaasyed@gmail.com
-💼 [LinkedIn](https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/)
+<a href="https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+</a>
 
 
 I'm happy to personalize this further!
