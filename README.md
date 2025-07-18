@@ -60,7 +60,14 @@ Currently exploring data analytics and aiming to blend it with powerful front-en
 
 ---
 
-📫 Contact
+## 📫 Contact:
+
+<p>
+  <a href="https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/" target="_blank">
+    <img src="https://img.shields.io/badge/💼" alt="Visit LinkedIn" />
+  </a>
+</p>
+
 📧 Email: hadisaasyed@gmail.com
 💼 [LinkedIn](https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/)
 
