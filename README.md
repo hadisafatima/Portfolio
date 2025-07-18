@@ -7,7 +7,7 @@ This project showcases my **skills**, **projects**, **certifications**, and jour
 
 <p>
   <a href="https://hadisafatima.github.io/Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀 Portfolio-1e40af?style=for-the-badge&logo=vercel&logoColor=purple" alt="Visit Portfolio" />
+    <img src="https://img.shields.io/badge/🚀 Portfolio-1e40af?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio" />
   </a>
 </p>
 
