@@ -42,7 +42,7 @@ This project showcases my **skills**, **projects**, **certifications**, and jour
 To run the project locally:
 
 ### 1. Clone the repo
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/hadisafatima/Portfolio.git
 
 ### 2. Install Dependencies
 cd your-repo-name
