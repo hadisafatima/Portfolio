@@ -1,12 +1,74 @@
-# React + Vite
+# 💼 Hadisa Fatima Syed - Developer & Data Analsyst Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code of my personal **portfolio website**!  
+This project showcases my **skills**, **projects**, **certifications**, and journey as a **front-end developer** and **aspiring data analyst**.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>
+  <a href="https://hadisafatima.github.io/Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀 Visit%20Portfolio-000000?style=for-the-badge&logo=github&logoColor=white" alt="Visit Portfolio" />
+  </a>
+</p>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Built With
+
+- ⚛️ React.js
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 💡 React Icons
+- 🧑‍💻 GitHub Pages (for deployment)
+
+---
+
+## 📸 Features
+
+- Responsive & elegant UI
+- About Me section
+- Technical Skills with icons
+- Filterable Projects showcase
+- Certificates gallery
+- Contact section with links
+- Smooth scroll & animations
+
+
+---
+
+## 🔧 Getting Started
+
+To run the project locally:
+
+### 1. Clone the repo
+git clone https://github.com/hadisafatima/Portfolio.git
+
+### 2. Install Dependencies
+cd your-repo-name
+npm install
+
+### 3. Run Developement Server
+npm run dev
+
+---
+
+## 🙋‍♀️ About Me
+
+Hi! I'm Hadisa Fatima Syed, a curious and creative developer passionate about building intuitive user interfaces.
+Currently exploring data analytics and aiming to blend it with powerful front-end skills for impactful solutions.
+
+---
+
+## 📫 Contact:
+
+<a href="mailto:hadisafatima@example.com" target="_blank">
+  <img src="https://img.shields.io/badge/Email-Me-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
+</a>
+
+<a href="https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+</a>
+
+
+I'm happy to personalize this further!
