@@ -143,6 +143,12 @@ const certificates = [
     issuer: "Coursera . Google",
     Dated: "17 June, 2025",
     image: `${import.meta.env.BASE_URL}Analyze_Data_to_Answer_Questions.png`,
+  },
+  {
+    title: "Introduction to Data Visualization Course",
+    issuer: "Simplilearn",
+    Dated: "28 July 2025",
+    image: `${import.meta.env.BASE_URL}Data_Visualization_course_certificate_by_Simplilearn.png`.
   }
 ];
 
