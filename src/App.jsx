@@ -146,7 +146,6 @@ const certificates = [
   },
 ];
 
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
