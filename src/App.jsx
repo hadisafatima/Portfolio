@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import {
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt,
   FaTable, FaChartLine, FaFileExcel, FaThLarge,
-  FaTools, FaChartBar, FaDatabase, FaCode
+  FaTools, FaChartBar, FaDatabase, FaCode,
 } from 'react-icons/fa';
 
 import {
@@ -17,7 +17,7 @@ const SkillCard = ({ title, color, skills }) => (
   <div className="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-lg hover:scale-105 transition-transform duration-300">
     <h3 className={`text-xl font-semibold mb-5 ${color}`}>{title}</h3>
     <div className=" flex flex-row flex-wrap space-x-4 space-y-4 p-8 text-white/90">
-    <span className='text-purple-300 font-bold px-2 pb-2 scale-175'>.</span>
+      <span className='text-purple-300 font-bold px-2 pb-2 scale-175'>.</span>
       {skills.map((skill, index) => (
         <div key={index} className="flex items-center space-x-2 h-fit">
           <span className="text-2xl">{skill.icon}</span>
@@ -161,7 +161,7 @@ function App() {
       {/* LARGE SCREENS NAVBAR */}
       <div id='navbar' className='hidden sm:flex flex-row px-[3rem] space-x-4 lg:space-x-4 py-8 fixed z-50 top-0 justify-center items-center w-full lg:w-screen bg-[#242424]'>
         {/* <p> */}
-          <div id="logo" className="text-4xl font-bold">Hadisa.</div>
+        <div id="logo" className="text-4xl font-bold">Hadisa.</div>
         {/* </p> */}
         <section href='#tabs' className='flex font-bold flex-row sm:text-[0.6rem] md:text-[0.7rem] lg:text-[1rem] lg:space-x-6 px-3 py-2 lg:px-5 lg:py-4 border rounded-full'>
           <a href='#home' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Home</a>
@@ -170,7 +170,7 @@ function App() {
           <a href='#projects' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Projects</a>
           <a href="#certificates" className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Certificates</a>
         </section>
-        
+
         <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
           className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
           <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
@@ -189,7 +189,7 @@ function App() {
       {/* MOBILE SCREEN NAVBAR OPTIONS */}
       {isMenuOpen && (
         <div className='flex sm:hidden flex-col space-y-8 bg-[#242424] fixed top-0 w-full h-screen z-40 py-8 px-[3rem] justify-center'>
-          
+
           <section className='flex flex-row justify-end w-full'>
             <p onClick={() => setIsMenuOpen(false)} className='border border-red-700 text-2xl px-3 py-2 font-bold rounded-2xl text-red-700'>
               <i className="fa-solid fa-xmark"></i>
@@ -253,105 +253,98 @@ function App() {
 
           <section className='flex-2/3'>
             <p id='aboutheading' className='flex justify-start font-bold text-3xl sm:text-5xl pb-4'>About Me!</p>
-          
+
             <section id='aboutcontent' className='text-left text-[1.5rem]'>
-              <p>I'm <span className=" yeseva-one-regular">Hadisa Fatima Syed</span> a <span
-                      className="bg-yellow-100/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">Passionate</span>
-                  Front-end developer with <span
-                      className="bg-yellow-200/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">leveraging
-                      Enthusiasm</span>
-                  for Data Analysis.</p>
-              
-              <br />
-
-              <p>I'm a <span className="bg-blue-400/60 py-1 px-2 rounded-full font-mono yeseva-one-regular">3rd Year</span>
-                  Student
-                  of B.E Software in Mehran University of Engineering
-                  and Technology, Jamshoro (MUET, Jamshoro).</p>
-              
-              <br />
-              
-              <p>Got started with UI developement back in 2nd Semester, and now I can <span
-                      className="bg-purple-100/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">confidently</span> and
-                  <span
-                      className="bg-purple-800/50 text-white py-1 px-2 rounded-full font-mono yeseva-one-regular">seamlessly</span>
-                  build almost
-                  any design. But, that didn't feel <span
-                      className="bg-purple-400/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">enough</span> to me so
-                  I explored a little about relevant fields 
-                  and
-                  got my interests stuck in the
-                  landscape of <span className="bg-purple-600/40 py-1 px-2 rounded-full font-mono yeseva-one-regular">Data
-                      Analysis</span>. Now I
-                  try
-                  to divide time to do both, but not combininig these fields <span
-                      className="bg-purple-400/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">YET</span>.
+              <p>
+                I'm <span className=" yeseva-one-regular">Hadisa Fatima Syed</span>, a
+                <span className="bg-yellow-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Passionate </span>
+                Front-end Developer with an ever-growing
+                <span className="bg-yellow-200/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Enthusiasm </span>
+                for Data Analysis.
               </p>
 
               <br />
 
-              <p>I've immensely <span className="bg-orange-400/80 py-1 px-2 rounded-full font-mono yeseva-one-regular">growing
-                      interests</span> 
-                   towards using UI developement and Data Analysis' knowledge/Skills
-                  Together <span className="bg-orange-600 py-1 px-2 rounded-full font-mono yeseva-one-regular">🤝</span></p>
-              
-              <br />
-
-              <p>I <span className="bg-green-500/50 py-1 px-2 rounded-full font-mono yeseva-one-regular">love</span> going out
-                  of box, instead of
-                  building traditionally designed sites I embark on developing
-                  something, that's <span
-                      className="bg-black text-green-300 py-1 px-2 rounded-full font-mono yeseva-one-regular">new</span>,
-                  that's <span
-                      className="bg-black text-green-300 py-1 px-2 rounded-full font-mono yeseva-one-regular">attention
-                      seeker</span>
-                  👀. </p>
-
-              <br />
-
-              <p>Speaking of <span
-                      className="bg-gray-600 text-white py-1 px-2 rounded-full font-mono yeseva-one-regular">Analyst</span> 
-                      side of mine 😌. I've created a few <span className='bg-teal-600 text-white py-1 px-2 rounded-full font-mono yeseva-one-regular'>Analysis 
-                      <span className='bg-gray-800 text-white py-0 px-2 rounded-full font-mono yeseva-one-regular'>+</span> Visualizations</span> 
-                      projects with sole purpose to gain skills required in Analysis of Data.
-                I also had been part of <span
-                      className="bg-gray-600/60 text-white py-1 px-2 rounded-full font-mono yeseva-one-regular">2</span> Remote Data Analysis <span
-                      className="bg-gray-400 text-black py-1 px-2 rounded-full font-mono yeseva-one-regular">Internships</span>.</p>
-
-              <br />
-
-              <p>I've been part of a <span className="bg-pink-400 py-1 px-2 rounded-full font-mono yeseva-one-regular">virtual
-                      Job
-                      Simulation</span> for Data Analyst as well, by <span
-                      className="bg-pink-400/90 py-1 px-2 rounded-full font-mono yeseva-one-regular">Tata <span className='bg-gray-800 text-white py-0 px-2 rounded-full font-mono yeseva-one-regular'>and</span> Forage</span>, back in <span className="border-b-4 border-b-pink-700 text-white/60 font-bold">April 2025</span>, it was an
-                  amazing experience ✨. It taught me everything that an Analyst go through, from <span
-                      className="bg-pink-400/70 py-1 px-2 rounded-full font-mono yeseva-one-regular">Data Manipulation</span>
-                  to <span className="bg-pink-400/70 py-1 px-2 rounded-full font-mono yeseva-one-regular">presentation
-                  </span>.</p>
-
-              <br />
-
-              <p><span className="bg-yellow-400 py-1 px-2 rounded-full font-mono yeseva-one-regular">Fun Fact
-                      😶‍🌫️:</span> Free me is a <span className="bg-purple-400 py-1 px-2 rounded-full font-mono yeseva-one-regular">Rope Jumper</span>
-                  ❤️‍🔥 or on a killing spree in a <span
-                      className="bg-orange-400 py-1 px-2 rounded-full font-mono yeseva-one-regular">FreeFire</span> room 🔥.
+              <p>
+                Currently, I’m a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">3rd Year</span>
+                Software Engineering student at Mehran University of Engineering and Technology, Jamshoro (MUET).
               </p>
 
+              <br />
+
+              <p>
+                My journey started with <span className="bg-purple-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">UI Development</span> in 2nd semester, and ever since,
+                I’ve grown into someone who can <span className="bg-purple-800/50 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">confidently</span> and
+                <span className="bg-purple-800/30 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> seamlessly </span>
+                bring designs to life. But I didn’t stop there — curiosity pushed me into exploring
+                <span className="bg-purple-600/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Data Analysis</span>,
+                and it quickly became a field I couldn’t resist.
+              </p>
+
+              <br />
+
+              <p>
+                Today, I strive to bring these worlds together — using both UI Development and Data Analysis skills
+                <span className="bg-orange-600 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> 🤝 </span>
+                to create meaningful, user-focused solutions.
+              </p>
+
+              <br />
+
+              <p>
+                I <span className="bg-green-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> love</span> breaking away from the ordinary.
+                Instead of sticking to traditional layouts, I design experiences that are
+                <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> unique </span>,
+                <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> bold </span>,
+                and true <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> attention-catchers👀 </span>
+              </p>
+
+              <br />
+
+              <p>
+                On the <span className="bg-gray-600 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Analyst</span> side 😌,
+                I’ve worked on several <span className='bg-teal-600 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular'> Analysis
+                  <span className='bg-gray-800 text-white py-0 px-1 mx-1 rounded-full font-mono yeseva-one-regular'> + </span> Visualizations </span> projects
+                to sharpen my data storytelling skills.
+                I’ve also been part of multiple Data-related internships (remote),
+                along with a <span className="bg-pink-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Virtual Job Simulation</span> by
+                <span className="bg-pink-400/90 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Tata <span className='bg-gray-800 text-white py-0 px-2 mx-1 rounded-full font-mono yeseva-one-regular'> and </span> Forage </span> in
+                <span className="border-b-4 border-b-pink-700 text-white/60 font-bold"> April 2025</span> —
+                where I learned the complete process of an Analyst’s work, from <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Data Manipulation </span>
+                to <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Presentation </span>.
+              </p>
+
+              <br />
+
+              <p>
+                Currently, I’m interning as a <span className="bg-blue-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">React.js Developer</span> at
+                <span className="bg-gray-700/50 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Webperts </span>,
+                while continuing to build my expertise in Data Analysis through projects and internships.
+              </p>
+
+              <br />
+
+              <p>
+                <span className="bg-yellow-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Fun Fact 😶‍🌫️:</span>
+                When I’m not coding or analyzing, I’m probably a
+                <span className="bg-purple-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Rope Jumper </span> ❤️‍🔥
+                or going on a spree in a <span className="bg-orange-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> FreeFire </span> room 🔥.
+              </p>
             </section>
           </section>
         </section>
-
       </div>
+
 
 
       {/* SKILLS SECTION */}
       <div id='skills' className='mt-50 px-[3rem] sm:px-16 lg:px-24'>
-        <p id='skillsheading' className='flex justify-start font-bold text-3xl sm:text-5xl'>Skills</p>      
+        <p id='skillsheading' className='flex justify-start font-bold text-3xl sm:text-5xl'>Skills</p>
         <div className="flex flex-row flex-wrap justify-center gap-12 mt-8">
           <SkillCard title="Front-End Development" color="text-purple-300" skills={frontEndSkills} />
           <SkillCard title="Data Analysis" color="text-purple-300" skills={dataAnalysisSkills} />
           <SkillCard title="Tools & Workflow" color="text-purple-300" skills={tools} />
-      </div>
+        </div>
       </div>
 
 
@@ -365,11 +358,10 @@ function App() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full font-semibold border ${
-                selectedCategory === category
+              className={`px-4 py-2 rounded-full font-semibold border ${selectedCategory === category
                   ? "bg-white text-purple-300"
                   : "text-[#a4a2a2] border-purple-300/80 hover:bg-white/10"
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -392,14 +384,14 @@ function App() {
                   <p className="text-white/80 mb-3 text-sm">{project.description}</p>
                   <p className="text-xs text-white/50 italic mb-2">Tech stack: {project.tech}</p>
                   <div className="flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3 mt-4">
-                      <a href={project.demoLink} target="_blank" className="tab text-blue-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3"><i className="fa-solid fa-link">:</i> Live Demo<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
-                      <a href={project.githubLink} target="_blank" className="tab text-green-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3 h-fit"><i className="fa-brands fa-github">:</i> GitHub<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href={project.demoLink} target="_blank" className="tab text-blue-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3"><i className="fa-solid fa-link">:</i> Live Demo<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href={project.githubLink} target="_blank" className="tab text-green-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3 h-fit"><i className="fa-brands fa-github">:</i> GitHub<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </section>
               </div>
             ))}
         </div>
-    </div>
+      </div>
 
 
       {/* CERTIFICATES SECTION */}
@@ -469,7 +461,7 @@ function App() {
           <p>&copy; {new Date().getFullYear()} Hadisa Fatima Syed</p>
           <span className="hidden sm:block">|</span>
           <p>Built with <span className="text-[#be83c9] font-semibold">React & Tailwind</span></p>
-      </div>
+        </div>
       </footer>
     </>
   )
