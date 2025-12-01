@@ -3,13 +3,11 @@ import './App.css'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 import {
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt,
-  FaTable, FaChartLine, FaFileExcel, FaThLarge,
-  FaTools, FaChartBar, FaDatabase, FaCode,
+  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt, FaCode,
 } from 'react-icons/fa';
 
 import {
-  SiTailwindcss, SiSass, SiMysql, SiCanva
+  SiTailwindcss, SiSass, SiCanva
 } from 'react-icons/si';
 
 // skills
@@ -29,7 +27,7 @@ const SkillCard = ({ title, color, skills }) => (
   </div>
 );
 
-const frontEndSkills = [
+const skills = [
   { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
   { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
   { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-400" /> },
@@ -38,20 +36,9 @@ const frontEndSkills = [
   { name: 'SASS', icon: <SiSass className="text-pink-400" /> },
 ];
 
-const dataAnalysisSkills = [
-  { name: 'Tabulae', icon: <FaThLarge className="text-purple-400" /> },
-  { name: 'Power BI', icon: <FaChartLine className="text-yellow-400" /> },
-  { name: 'MySQL', icon: <SiMysql className="text-blue-400" /> },
-  { name: 'Spreadsheets', icon: <FaFileExcel className="text-green-500" /> },
-  { name: 'Pivot Tables', icon: <FaTable className="text-indigo-400" /> },
-  { name: 'Visualization', icon: <FaChartBar className="text-orange-400" /> },
-  { name: 'Data Wrangling', icon: <FaTools className="text-gray-300" /> },
-];
-
 const tools = [
   { name: 'Git', icon: <FaGitAlt className="text-orange-400" /> },
   { name: 'GitHub', icon: <FaGithub className="text-white" /> },
-  { name: 'Kaggle', icon: <FaDatabase className="text-blue-300" /> },
   { name: 'VS Code', icon: <FaCode className="text-blue-500" /> },
   { name: 'Canva', icon: <SiCanva className="text-blue-400" /> },
 ];
@@ -86,34 +73,18 @@ const projects = [
     githubLink: "https://github.com/hadisafatima/TwitterX_Clone",
   },
   {
-    title: "Netflix Movies",
-    description: "This Netflix movies analysis project reflects my hands-on experience with data wrangling, exploratory analysis, and insightful visualization to extract meaningful entertainment industry insights.",
-    tech: "Python, Seaborn, Matplotlib, Numpy, Pandas",
-    category: "Data Analysis",
-    image: `${import.meta.env.BASE_URL}Netflix.png`,
-    demoLink: "#",
-    githubLink: "https://github.com/hadisafatima/Netflix-Movies-Data-Analysis-Project",
-  },
-  {
-    title: "Military Expenditure (1960 - 2018)",
-    description: "This analysis project is to analyze global military spending trends over time using historical expenditure data (1960–2018). The analysis aims to identify top-spending countries, regional patterns, year-over-year growth, and budget priorities.",
-    tech: "Spreadsheets, Tabulae, GitHub, Kaggle",
-    category: "Data Analysis",
-    image: "https://media.istockphoto.com/id/1498668919/photo/toy-tank-and-dollars-army-token.jpg?s=612x612&w=0&k=20&c=FvtMRxcjx3y-GsgvxF7Bz5LNUti-Scba2Bj305f4zCc=",
-    demoLink: "https://public.tableau.com/app/profile/hadisa.fatima.syed/viz/MilitaryExpenditure1960-2018Analysis/MilitaryExpenditureDashboard",
-    githubLink: "https://github.com/hadisafatima/Military-Expenditure-Data-Analysis-Project",
+    title: "CSSAwwwards",
+    description: "A full-stack website with a responsive interface and a strong backend powering dynamic features. It delivers smooth functionality, modern design, and real-world full-stack performance.",
+    tech: "React, Vite, MongoDB, NodeJS",
+    category: "Frontend",
+    image: `${import.meta.env.BASE_URL}CSSAwwwards.png`,
+    demoLink: "https://cssawwwards.com/demo/",
+    githubLink: "https://github.com/webperts/accounts",
   },
 ];
 
 // certificates
 const certificates = [
-  {
-    title: "4-Day CSS Bootcamp Certificate",
-    issuer: "Microsoft Learn Student Ambassador (MLSA) Community",
-    Dated: "15 Aug, 2023 - 18 Aug, 2023",
-    image: "./CSS_Bootcamp.jpeg",
-    link: "https://coursera.org/share/sample-cert",
-  },
   {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
@@ -126,35 +97,10 @@ const certificates = [
     Dated: "2023 - 2024",
     image: `${import.meta.env.BASE_URL}GDSC_certificate.jpeg`,
   },
-  {
-    title: "Forage Data Analytics Virtual Job Simulation",
-    issuer: "Forage · Tata",
-    Dated: "19 April, 2025",
-    image: "./Forage_&_Tata_Analytics_Job_Simulation.jpeg",
-  },
-  {
-    title: "Prepare Data For Exploration Certificate",
-    issuer: "Coursera . Google",
-    Dated: "23 June, 2025",
-    image: `${import.meta.env.BASE_URL}Google_Prepare_Data_certificate.jpeg`,
-  },
-  {
-    title: "Analyze Data to Answer Questions",
-    issuer: "Coursera . Google",
-    Dated: "17 June, 2025",
-    image: `${import.meta.env.BASE_URL}Analyze_Data_to_Answer_Questions.png`,
-  },
-  {
-    title: "Intoduction to Data Visualization",
-    issuer: "Simplilearn",
-    Dated: "28 July, 2025",
-    image: `${import.meta.env.BASE_URL}Data_Visualization_course_certificate_by_Simplilearn.png`,
-  },
 ];
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
     <>
@@ -164,14 +110,29 @@ function App() {
         <div id="logo" className="text-4xl font-bold">Hadisa.</div>
         {/* </p> */}
         <section href='#tabs' className='flex font-bold flex-row sm:text-[0.6rem] md:text-[0.7rem] lg:text-[1rem] lg:space-x-6 px-3 py-2 lg:px-5 lg:py-4 border rounded-full'>
-          <a href='#home' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Home</a>
-          <a href='#about' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>About Me</a>
-          <a href='#skills' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Skills</a>
-          <a href='#projects' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Projects</a>
-          <a href="#certificates" className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2'>Certificates</a>
+          <a href='#home' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2' onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+          }}>Home</a>
+          <a href='#about' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2' onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+          }}>About Me</a>
+          <a href='#skills' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2' onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+          }}>Skills</a>
+          <a href='#projects' className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2' onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+          }}>Projects</a>
+          <a href="#certificates" className='tab cursor-pointer hover:bg-white/5 rounded-full px-3 py-2' onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('certificates').scrollIntoView({ behavior: 'smooth' });
+          }}>Certificates</a>
         </section>
 
-        <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+        <a href="./Hadisa_Syed_FrontEnd_Resume.pdf" download="Hadisa_Syed_FrontEnd_Resume.pdf"
           className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
           <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
         </a>
@@ -204,10 +165,9 @@ function App() {
               <a href='#skills' onClick={() => setIsMenuOpen(false)} className='tab bg-white/5 rounded-full px-4 py-2'>Skills</a>
               <a href='#projects' onClick={() => setIsMenuOpen(false)} className='tab bg-white/5 rounded-full px-4 py-2'>Projects</a>
               <a href="#certificates" onClick={() => setIsMenuOpen(false)} className='tab bg-white/5 rounded-full px-4 py-2'>Certificates</a>
-
             </section>
 
-            <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
+            <a href="./Hadisa_Syed_FrontEnd_Resume.pdf" download="Hadisa_Syed_FrontEnd_Resume.pdf"
               className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
               <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
             </a>
@@ -217,32 +177,22 @@ function App() {
         </div>
       )}
 
-
       {/* HOME SECTION */}
       <div id='home' className='px-[3rem] flex flex-col items-center'>
         <p id='name' className='font-bold text-3xl sm:text-6xl mt-54 sm:mt-64 px-4 sm:px-32 yeseva-one-regular'>I'm Hadisa Fatima Syed</p>
         <p id='taglines' className='text-xl sm:text-3xl mx-2 sm:mx-16 lg:mx-40 px-4 sm:px-0 pt-6 font-semibold'>
-          I am a results-driven professional dedicated to crafting seamless web
-          experiences as a front-end developer
-          and uncovering valuable insights as a data analyst. Whether building interactive interfaces or
-          translating raw
-          data into business value, I aim to deliver clarity, usability, and impact.
+          As a front-end developer, I specialize in creating responsive, high-performance interfaces that balance beauty and usability. I obsess over details — motion, spacing, accessibility, and clarity — to turn designs into polished, interactive experiences.
         </p>
 
-        <div className='flex flex-row space-x-8 pt-8'>
-          <a href="./Hadisa_Syed_CV_(Data Analyst).pdf" download="Hadisa_Syed_CV_(Data Analyst).pdf"
-            className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
-            <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
-          </a>
-
-          <a href="./Hadisa_Syed_Resume_(Data Analyst).pdf" download="Hadisa_Syed_Resume_(Data Analyst).pdf"
-            className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
-            <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
-          </a>
+        <p className="max-w-xl text-gray-300 italic m-8">
+          I build products that look great, load fast, and feel intuitive — every time.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          <span className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-gray-200 text-sm">8+ Projects Built</span>
+          <span className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-gray-200 text-sm">Strong UI Sense & Clean Code</span>
+          <span className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-gray-200 text-sm">Learning ReactLearning React, Databases & Backend Basics</span>
         </div>
-
       </div>
-
 
       {/* ABOUT SECTION */}
       <div id='about' className='mt-50 px-[3rem] text-justify sm:px-16'>
@@ -256,126 +206,74 @@ function App() {
 
             <section id='aboutcontent' className='text-left text-[1.5rem]'>
               <p>
-                I'm <span className=" yeseva-one-regular">Hadisa Fatima Syed</span>, a
-                <span className="bg-yellow-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Passionate </span>
-                Front-end Developer with an ever-growing
-                <span className="bg-yellow-200/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Enthusiasm </span>
-                for Data Analysis.
+                I'm <span className="yeseva-one-regular">Hadisa Fatima Syed</span>, a
+                <span className="bg-yellow-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">front-end developer</span>
+                who loves turning ideas into clean, modern, and interactive web experiences.
               </p>
-
-              <br />
 
               <p>
-                Currently, I’m a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">3rd Year</span>
-                Software Engineering student at Mehran University of Engineering and Technology, Jamshoro (MUET).
+                Currently a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">3rd-year Software Engineering student</span> at MUET,
+                I’m passionate about building interfaces that are not only visually appealing
+                but also intuitive, responsive, and accessible.
               </p>
-
-              <br />
 
               <p>
-                My journey started with <span className="bg-purple-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">UI Development</span> in 2nd semester, and ever since,
-                I’ve grown into someone who can <span className="bg-purple-800/50 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">confidently</span> and
-                <span className="bg-purple-800/30 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> seamlessly </span>
-                bring designs to life. But I didn’t stop there — curiosity pushed me into exploring
-                <span className="bg-purple-600/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Data Analysis</span>,
-                and it quickly became a field I couldn’t resist.
+                My journey started with <span className="bg-purple-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">UI development</span>,
+                where I learned the power of color, layout, and interaction.
+                Over time, I mastered modern tools like
+                <span className="bg-purple-600/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">React.js</span>,
+                <span className="bg-teal-500/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">TailwindCSS</span>,
+                and clean component-based architecture.
               </p>
-
-              <br />
 
               <p>
-                Today, I strive to bring these worlds together — using both UI Development and Data Analysis skills
-                <span className="bg-orange-600 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> 🤝 </span>
-                to create meaningful, user-focused solutions.
+                I completed a <span className="bg-blue-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Front-End Internship at Webperts</span>,
+                where I built responsive pages, reusable components, and optimized UX for real-world projects.
+                This experience strengthened my understanding of best practices, performance, and maintainable code.
               </p>
-
-              <br />
 
               <p>
-                I <span className="bg-green-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> love</span> breaking away from the ordinary.
-                Instead of sticking to traditional layouts, I design experiences that are
-                <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> unique </span>,
-                <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> bold </span>,
-                and true <span className="bg-black text-green-300 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> attention-catchers👀 </span>
+                Alongside development, I explore <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">design thinking</span>
+                and understand how layout, typography, spacing, and micro-interactions create meaningful digital experiences.
               </p>
-
-              <br />
 
               <p>
-                On the <span className="bg-gray-600 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Analyst</span> side 😌,
-                I’ve worked on several <span className='bg-teal-600 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular'> Analysis
-                  <span className='bg-gray-800 text-white py-0 px-1 mx-1 rounded-full font-mono yeseva-one-regular'> + </span> Visualizations </span> projects
-                to sharpen my data storytelling skills.
-                I’ve also been part of multiple Data-related internships (remote),
-                along with a <span className="bg-pink-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Virtual Job Simulation</span> by
-                <span className="bg-pink-400/90 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Tata <span className='bg-gray-800 text-white py-0 px-2 mx-1 rounded-full font-mono yeseva-one-regular'> and </span> Forage </span> in
-                <span className="border-b-4 border-b-pink-700 text-white/60 font-bold"> April 2025</span> —
-                where I learned the complete process of an Analyst’s work, from <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Data Manipulation </span>
-                to <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Presentation </span>.
+                When I’m not coding, I recharge by
+                <span className="bg-purple-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">rope jumping</span> ❤️‍🔥
+                or competing in <span className="bg-orange-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">FreeFire</span> 🔥 —
+                because creativity needs both energy and fun.
               </p>
 
-              <br />
-
-              <p>
-                Currently, I’m interning as a <span className="bg-blue-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">React.js Developer</span> at
-                <span className="bg-gray-700/50 text-white py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Webperts </span>,
-                while continuing to build my expertise in Data Analysis through projects and internships.
+              <p className='font-semibold text-xl text-gray-300'>
+                ✨ My mission as a Front-End Developer is simple:
+                to build experiences that feel smooth, look beautiful, and make users say “wow” — one interface at a time.
               </p>
 
-              <br />
-
-              <p>
-                <span className="bg-yellow-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Fun Fact 😶‍🌫️:</span>
-                When I’m not coding or analyzing, I’m probably a
-                <span className="bg-purple-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> Rope Jumper </span> ❤️‍🔥
-                or going on a spree in a <span className="bg-orange-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular"> FreeFire </span> room 🔥.
-              </p>
             </section>
           </section>
         </section>
       </div>
 
-
-
       {/* SKILLS SECTION */}
       <div id='skills' className='mt-50 px-[3rem] sm:px-16 lg:px-24'>
         <p id='skillsheading' className='flex justify-start font-bold text-3xl sm:text-5xl'>Skills</p>
         <div className="flex flex-row flex-wrap justify-center gap-12 mt-8">
-          <SkillCard title="Front-End Development" color="text-purple-300" skills={frontEndSkills} />
-          <SkillCard title="Data Analysis" color="text-purple-300" skills={dataAnalysisSkills} />
+          <SkillCard title="Front-End Development" color="text-purple-300" skills={skills} />
           <SkillCard title="Tools & Workflow" color="text-purple-300" skills={tools} />
         </div>
       </div>
-
 
       {/* PROJECTS SECTION */}
       <div id='projects' className='mt-50 px-[3rem] sm:px-16 lg:px-24'>
         <p id='projectsheading' className='flex justify-start font-bold text-3xl sm:text-5xl'>Some Projects</p>
 
-        {/* Filter Buttons */}
-        <div className="flex justify-center space-x-4 mt-8">
-          {["All", "Frontend", "Data Analysis"].map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full font-semibold border ${selectedCategory === category
-                  ? "bg-white text-purple-300"
-                  : "text-[#a4a2a2] border-purple-300/80 hover:bg-white/10"
-                }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
         {/* Project Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {projects
-            .filter((project) => selectedCategory === "All" || project.category === selectedCategory)
             .map((project, index) => (
               <div
                 key={index}
-                className="bg-white/5 cursor-pointer rounded-lg border border-white/20 shadow-md hover:shadow-lg transition-all duration-300"
+                className="bg-white/5 translate-y-0 hover:translate-y-1.5 rounded-lg border border-white/20 shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <img src={project.image} alt={project.title} className="rounded-t-lg mb-4 w-full" />
 
@@ -384,15 +282,14 @@ function App() {
                   <p className="text-white/80 mb-3 text-sm">{project.description}</p>
                   <p className="text-xs text-white/50 italic mb-2">Tech stack: {project.tech}</p>
                   <div className="flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3 mt-4">
-                    <a href={project.demoLink} target="_blank" className="tab text-blue-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3"><i className="fa-solid fa-link">:</i> Live Demo<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href={project.githubLink} target="_blank" className="tab text-green-400 hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3 h-fit"><i className="fa-brands fa-github">:</i> GitHub<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href={project.demoLink} target="_blank" className="tab hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3"><i className="fa-solid fa-link">:</i> Live Demo<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href={project.githubLink} target="_blank" className="tab hover:underline hover:bg-white/20 bg-white/10 rounded-full py-2 px-3 h-fit"><i className="fa-brands fa-github">:</i> GitHub<i className="ml-1 text-[0.5rem] fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </section>
               </div>
             ))}
         </div>
       </div>
-
 
       {/* CERTIFICATES SECTION */}
       <div id='certificates' className='mt-50 px-[3rem] sm:px-16 lg:px-24'>
@@ -402,7 +299,7 @@ function App() {
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="bg-white/5 rounded-xl border border-white/20 shadow-lg hover:shadow-xl transition duration-300"
+              className="bg-white/5 translate-0 hover:translate-y-1.5 rounded-xl border border-white/20 shadow-lg hover:shadow-xl transition duration-300"
             >
               <img
                 src={cert.image}
@@ -429,7 +326,6 @@ function App() {
         </div>
       </div>
 
-
       {/* FOOTER SECTION */}
       <footer className="mt-20 sm:px-16 pt-7 rounded-t-4xl bg-[#1a1a1a] text-white text-sm">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
@@ -437,11 +333,26 @@ function App() {
           <div id="logo" className="mx-5 text-3xl font-bold">Hadisa.</div>
 
           <div className="flex space-x-12">
-            <a href="#home" className="tab hover:underline hover:text-white-/50">Home</a>
-            <a href="#about" className="tab hover:underline hover:text-white-/50">About</a>
-            <a href="#skills" className="tab hover:underline hover:text-white-/50">Skills</a>
-            <a href="#projects" className="tab hover:underline hover:text-white-/50">Projects</a>
-            <a href="#certificates" className="tab hover:underline hover:text-white-/50">Certificates</a>
+            <a href="#home" className="tab hover:underline hover:text-white-/50" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+            }}>Home</a>
+            <a href="#about" className="tab hover:underline hover:text-white-/50" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+            }}>About</a>
+            <a href="#skills" className="tab hover:underline hover:text-white-/50" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+            }}>Skills</a>
+            <a href="#projects" className="tab hover:underline hover:text-white-/50" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            }}>Projects</a>
+            <a href="#certificates" className="tab hover:underline hover:text-white-/50" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('certificates').scrollIntoView({ behavior: 'smooth' });
+            }}>Certificates</a>
           </div>
 
           <div className="flex space-x-4 text-xl">
