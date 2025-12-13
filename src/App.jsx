@@ -46,22 +46,13 @@ const tools = [
 // projects
 const projects = [
   {
-    title: "Memory Game",
-    description: "An interactive memory game designed to enhance focus and recall through engaging card-matching challenges.",
-    tech: "HTML5, CSS3, JS",
+    title: "CSSAwwwards",
+    description: "A full-stack website with a responsive interface and a strong backend powering dynamic features. It delivers smooth functionality, modern design, and real-world full-stack performance.",
+    tech: "React, Vite, MongoDB, NodeJS",
     category: "Frontend",
-    image: `${import.meta.env.BASE_URL}MemoryGame.png`,
-    demoLink: "https://hadisafatima.github.io/Simple-Memory-Game-web/",
-    githubLink: "https://github.com/hadisafatima/Simple-Memory-Game-web",
-  },
-  {
-    title: "Quran and Sunnah",
-    description: "A site sharing the meanings of Surahs and timeless Hadiths to deepen understanding of Quran and Sunnah.",
-    tech: "HTML5, CSS3, JS",
-    category: "Frontend",
-    image: `${import.meta.env.BASE_URL}QuranAndSunnah.png`,
-    demoLink: "https://hadisafatima.github.io/Wisdoms-of-Holy-Quran-and-Sunnahs/",
-    githubLink: "https://github.com/hadisafatima/Wisdoms-of-Holy-Quran-and-Sunnahs",
+    image: `${import.meta.env.BASE_URL}CSSAwwwards.png`,
+    demoLink: "https://cssawwwards.com/demo/",
+    githubLink: "https://github.com/webperts/accounts",
   },
   {
     title: "Twitter (X) - Clone",
@@ -73,13 +64,22 @@ const projects = [
     githubLink: "https://github.com/hadisafatima/TwitterX_Clone",
   },
   {
-    title: "CSSAwwwards",
-    description: "A full-stack website with a responsive interface and a strong backend powering dynamic features. It delivers smooth functionality, modern design, and real-world full-stack performance.",
-    tech: "React, Vite, MongoDB, NodeJS",
+    title: "Quran and Sunnah",
+    description: "A site sharing the meanings of Surahs and timeless Hadiths to deepen understanding of Quran and Sunnah.",
+    tech: "HTML5, CSS3, JS",
     category: "Frontend",
-    image: `${import.meta.env.BASE_URL}CSSAwwwards.png`,
-    demoLink: "https://cssawwwards.com/demo/",
-    githubLink: "https://github.com/webperts/accounts",
+    image: `${import.meta.env.BASE_URL}QuranAndSunnah.png`,
+    demoLink: "https://hadisafatima.github.io/Wisdoms-of-Holy-Quran-and-Sunnahs/",
+    githubLink: "https://github.com/hadisafatima/Wisdoms-of-Holy-Quran-and-Sunnahs",
+  },
+  {
+    title: "Memory Game",
+    description: "An interactive memory game designed to enhance focus and recall through engaging card-matching challenges.",
+    tech: "HTML5, CSS3, JS",
+    category: "Frontend",
+    image: `${import.meta.env.BASE_URL}MemoryGame.png`,
+    demoLink: "https://hadisafatima.github.io/Simple-Memory-Game-web/",
+    githubLink: "https://github.com/hadisafatima/Simple-Memory-Game-web",
   },
 ];
 
