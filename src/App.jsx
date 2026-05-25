@@ -218,7 +218,7 @@ function App() {
               </p>
 
               <p>
-                Currently a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">3rd-year Software Engineering student</span> at MUET,
+                Currently a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">final year Software Engineering student</span> at MUET,
                 I’m passionate about building interfaces that are not only visually appealing
                 but also intuitive, responsive, and accessible.
               </p>
