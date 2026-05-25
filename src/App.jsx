@@ -86,6 +86,12 @@ const projects = [
 // certificates
 const certificates = [
   {
+    title: "React Dev Remote Internship",
+    issuer: "Webperts",
+    Dated: "01 Aug, 2025 - 31 Oct, 2025",
+    image: `${import.meta.env.BASE_URL}webperts_internship.jpeg`,
+  },
+  {
     title: "Front-End Dev Remote Internship",
     issuer: "Nova Genius",
     Dated: "3 June, 2024 - 2 Aug, 2024",
