@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 
 import {
-  SiTailwindcss, SiSass, SiCanva
+  SiTailwindcss, SiSass, SiCanva, SiPhp, SiPhpmyadmin, SiRedis
 } from 'react-icons/si';
 
 // skills
@@ -34,6 +34,7 @@ const skills = [
   { name: 'React.js', icon: <FaReact className="text-cyan-400" /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400" /> },
   { name: 'SASS', icon: <SiSass className="text-pink-400" /> },
+  { name: 'PHP', icon: <SiPhp className='text-blue-300' /> },
 ];
 
 const tools = [
@@ -41,15 +42,26 @@ const tools = [
   { name: 'GitHub', icon: <FaGithub className="text-white" /> },
   { name: 'VS Code', icon: <FaCode className="text-blue-500" /> },
   { name: 'Canva', icon: <SiCanva className="text-blue-400" /> },
+  { name: 'PhpMyAdmin', icon: <SiPhpmyadmin className="text-orange-300" /> },
+  { name: 'Redis', icon: <SiRedis className="text-red-400" /> },
 ];
 
 // projects
 const projects = [
   {
+    title: "asancars",
+    description: "Contributed to the development of a full-stack Admin Panel and two interconnected Flutter applications for a ride-sharing platform. Built responsive React interfaces, developed PHP REST APIs, designed MySQL databases, integrated Redis for efficient data handling, and collaborated across the complete software development lifecycle, from planning to deployment.",
+    tech: "React, Flutter, Redis, Php, PhpMyadmin, MySQL",
+    category: "Web & App Development",
+    image: `${import.meta.env.BASE_URL}asancars.png`,
+    // demoLink: "https://cssawwwards.com/demo/",
+    // githubLink: "https://github.com/webperts/accounts",
+  },
+  {
     title: "CSSAwwwards",
     description: "A full-stack website with a responsive interface and a strong backend powering dynamic features. It delivers smooth functionality, modern design, and real-world full-stack performance.",
     tech: "React, Vite, MongoDB, NodeJS",
-    category: "Frontend",
+    category: "Web",
     image: `${import.meta.env.BASE_URL}CSSAwwwards.png`,
     demoLink: "https://cssawwwards.com/demo/",
     githubLink: "https://github.com/webperts/accounts",
@@ -58,7 +70,7 @@ const projects = [
     title: "Twitter (X) - Clone",
     description: "A visually accurate static clone of Twitter, designed to highlight layout and UI skills.",
     tech: "HTML5, CSS3, JS",
-    category: "Frontend",
+    category: "Web",
     image: `${import.meta.env.BASE_URL}Twitter.jpg`,
     demoLink: "https://hadisafatima.github.io/TwitterX_Clone/",
     githubLink: "https://github.com/hadisafatima/TwitterX_Clone",
@@ -67,7 +79,7 @@ const projects = [
     title: "Quran and Sunnah",
     description: "A site sharing the meanings of Surahs and timeless Hadiths to deepen understanding of Quran and Sunnah.",
     tech: "HTML5, CSS3, JS",
-    category: "Frontend",
+    category: "Web",
     image: `${import.meta.env.BASE_URL}QuranAndSunnah.png`,
     demoLink: "https://hadisafatima.github.io/Wisdoms-of-Holy-Quran-and-Sunnahs/",
     githubLink: "https://github.com/hadisafatima/Wisdoms-of-Holy-Quran-and-Sunnahs",
@@ -76,7 +88,7 @@ const projects = [
     title: "Memory Game",
     description: "An interactive memory game designed to enhance focus and recall through engaging card-matching challenges.",
     tech: "HTML5, CSS3, JS",
-    category: "Frontend",
+    category: "Web",
     image: `${import.meta.env.BASE_URL}MemoryGame.png`,
     demoLink: "https://hadisafatima.github.io/Simple-Memory-Game-web/",
     githubLink: "https://github.com/hadisafatima/Simple-Memory-Game-web",
@@ -85,6 +97,12 @@ const projects = [
 
 // certificates
 const certificates = [
+  {
+    title: "Junior Technical Associate",
+    issuer: "asancars",
+    Dated: "8 June, 2026 - 30 July, 2026",
+    image: `${import.meta.env.BASE_URL}webperts_internship.jpeg`,
+  },
   {
     title: "React Dev Remote Internship",
     issuer: "Webperts",
@@ -138,9 +156,9 @@ function App() {
           }}>Certificates</a>
         </section>
 
-        <a href="./Hadisa_Syed_FrontEnd_Resume.pdf" download="Hadisa_Syed_FrontEnd_Resume.pdf"
+        <a href="./Web_Dev_CV.pdf" download="Web_Dev_CV.pdf"
           className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
-          <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
+          <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
         </a>
       </div>
 
@@ -173,9 +191,9 @@ function App() {
               <a href="#certificates" onClick={() => setIsMenuOpen(false)} className='tab bg-white/5 rounded-full px-4 py-2'>Certificates</a>
             </section>
 
-            <a href="./Hadisa_Syed_FrontEnd_Resume.pdf" download="Hadisa_Syed_FrontEnd_Resume.pdf"
+            <a href="./Web_Dev_CV.pdf" download="Web_Dev_CV.pdf"
               className='resumeCvBtn bg-white text-[0.8rem] lg:text-[1rem] text-[#242424] py-4 px-3 lg:px-6 rounded-full cursor-pointer'>
-              <p>Download Resume <i className="fa-solid fa-download ml-2"></i></p>
+              <p>Download CV <i className="fa-solid fa-download ml-2"></i></p>
             </a>
 
           </section>
@@ -212,48 +230,39 @@ function App() {
 
             <section id='aboutcontent' className='text-left text-[1.5rem]'>
               <p>
-                I'm <span className="yeseva-one-regular">Hadisa Fatima Syed</span>, a
-                <span className="bg-yellow-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">front-end developer</span>
-                who loves turning ideas into clean, modern, and interactive web experiences.
+                I'm a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">final-year Software Engineering student</span> at MUET who enjoys turning ideas into scalable, user-friendly digital products. My primary expertise lies in front-end development, but I'm equally passionate about understanding how complete systems are built—from intuitive interfaces to robust back-end services.
               </p>
 
               <p>
-                Currently a <span className="bg-blue-400/60 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">final year Software Engineering student</span> at MUET,
-                I’m passionate about building interfaces that are not only visually appealing
-                but also intuitive, responsive, and accessible.
-              </p>
-
-              <p>
-                My journey started with <span className="bg-purple-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">UI development</span>,
-                where I learned the power of color, layout, and interaction.
-                Over time, I mastered modern tools like
+                My journey began with <span className="bg-purple-100/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">UI development</span>, where I discovered the impact of thoughtful design, clean layouts, and meaningful interactions. Over time, I specialized in
                 <span className="bg-purple-600/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">React.js</span>,
-                <span className="bg-teal-500/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">TailwindCSS</span>,
-                and clean component-based architecture.
+                <span className="bg-teal-500/40 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Tailwind CSS</span>,
+                and modern component-based architecture to create fast, responsive, and accessible web applications.
               </p>
 
               <p>
-                I completed a <span className="bg-blue-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Front-End Internship at Webperts</span>,
-                where I built responsive pages, reusable components, and optimized UX for real-world projects.
-                This experience strengthened my understanding of best practices, performance, and maintainable code.
+                During my internships, I worked on production-level applications ranging from responsive web platforms to a complete ride-sharing ecosystem. I contributed to a <span className="bg-blue-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">React Admin Panel</span>, two interconnected
+                <span className="bg-cyan-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Flutter applications</span>, built
+                <span className="bg-green-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">REST APIs</span>, designed
+                <span className="bg-yellow-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">MySQL databases</span>, and worked with
+                <span className="bg-red-500/50 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Redis</span>, giving me hands-on experience across the full software development lifecycle.
               </p>
 
               <p>
-                Alongside development, I explore <span className="bg-pink-400/70 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">design thinking</span>
-                and understand how layout, typography, spacing, and micro-interactions create meaningful digital experiences.
+                Beyond writing code, I'm passionate about creating experiences that users genuinely enjoy. I pay close attention to performance, accessibility, reusable architecture, and the small details—like animations, spacing, and micro-interactions—that make an application feel polished and intuitive.
               </p>
 
               <p>
-                When I’m not coding, I recharge by
-                <span className="bg-purple-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">rope jumping</span> ❤️‍🔥
-                or competing in <span className="bg-orange-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">FreeFire</span> 🔥 —
-                because creativity needs both energy and fun.
+                Outside of development, you'll probably find me
+                <span className="bg-purple-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">rope jumping</span> ❤️‍🔥,
+                exploring emerging technologies, or competing in
+                <span className="bg-orange-400 py-1 px-2 mx-1 rounded-full font-mono yeseva-one-regular">Free Fire</span> 🔥.
+                I believe continuous learning and curiosity are what drive great developers.
               </p>
 
-              <p className='font-semibold text-xl text-gray-300'>
-                ✨ My mission as a Front-End Developer is simple:
-                to build experiences that feel smooth, look beautiful, and make users say “wow” — one interface at a time.
-              </p>
+              {/* <p className="font-semibold text-xl text-gray-300">
+                ✨ My goal is to build software that is beautiful, performant, and impactful—creating seamless experiences that users love and products that make a difference.
+              </p> */}
 
             </section>
           </section>
