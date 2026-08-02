@@ -101,7 +101,7 @@ const certificates = [
     title: "Junior Technical Associate",
     issuer: "asancars",
     Dated: "8 June, 2026 - 30 July, 2026",
-    image: `${import.meta.env.BASE_URL}webperts_internship.jpeg`,
+    image: `${import.meta.env.BASE_URL}asancars_internship.jpeg`,
   },
   {
     title: "React Dev Remote Internship",
